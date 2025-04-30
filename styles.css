@@ -77,16 +77,16 @@ section.card {
   border-bottom-right-radius: var(--border-radius);
 }
 
-.very-dark-grayish-blue{
-   background-color: var(--very-dark-grayish-blue);
+.very-dark-grayish-blue {
+  background-color: var(--very-dark-grayish-blue);
 }
 
-.grayish-blue{
-   background-color: var(--grayish-blue);
+.grayish-blue {
+  background-color: var(--grayish-blue);
 }
 
-.light-grayish-blue{
-   background-color: var(--light-grayish-blue);
+.light-grayish-blue {
+  background-color: var(--light-grayish-blue);
 }
 
 #author-image {
@@ -170,5 +170,35 @@ section.card {
     height: 100%;
     border-top-left-radius: var(--border-radius);
     border-bottom-left-radius: var(--border-radius);
+  }
+
+  .social-icons-position {
+    position: absolute;
+    top: -3rem;
+    right: -4.3rem;
+    z-index: 1;
+    background-color: var(--very-dark-grayish-blue);
+    padding: 1rem 2rem;
+    border-radius: var(--border-radius);
+  }
+
+  .social-icons-position::after {
+    content: "";
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-top: 15px solid var(--very-dark-grayish-blue);
+    position: absolute;
+    top: 46px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .social-icons-position img {
+    width: 20px;
+    height: 20px;
+  }
+
+  .card-author {
+    position: relative;
   }
 }
